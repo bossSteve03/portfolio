@@ -5,6 +5,18 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      width: {
+        '28rem': '28rem',
+        '30rem': '30rem',
+        '32rem': '32rem',
+        '33rem': '33rem',
+        '48rem': '48rem',
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -177,9 +189,10 @@ module.exports = {
       200: '2',
     },
     container: {},
-    content: {
-      none: 'none',
-    },
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
     cursor: {
       auto: 'auto',
       default: 'default',
