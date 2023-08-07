@@ -6,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      boxShadow: {
+        'bottom': '0 1rem 4rem -1rem rgba(0, 0, 0, 0.5)',
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
