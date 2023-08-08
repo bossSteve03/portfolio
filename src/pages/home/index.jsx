@@ -11,7 +11,7 @@ import tailwind_icon from '../../assets/tailwindcss.png'
 export default function Home() {
   return (
     <>
-    <div id="hero" className='flex flex-row w-48rem justify-center mx-auto my-0 border-b border-black mt-20'>
+    <div id="hero" className='flex flex-row w-48rem justify-center mx-auto my-0 border-b border-black mt-16'>
       <div id="inner-hero" className='flex flex-col my-auto pt-10'>
         <h1 className='text-4xl font-bold w-30rem mb-1'>
           Front-End Developer 👋
@@ -25,6 +25,7 @@ export default function Home() {
         </div>
       </div>
       <img src={profile_pic} alt="Steve Totev" className='h-80' />
+      <p className='place-self-end h-64 border-r border-black'></p>
     </div>
     <div id="tech-stack" className='flex flex-row mx-auto my-7 gap-7 w-48rem'>
       <h4 className='border-r border-black pr-5 place-self-center py-1 text-lg pl-7 mr-5'>Tech stack</h4>
