@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Nav } from './layouts';
-import { Home } from './pages';
+import { Home, About, Projects } from './pages';
 
 function App() {
 
@@ -9,6 +9,8 @@ function App() {
     <>
     <Nav />
     <Home />
+    <About />
+    <Projects />
     </>
   )
 }
