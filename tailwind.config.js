@@ -21,6 +21,7 @@ export default {
         '30rem': '30rem',
         '32rem': '32rem',
         '33rem': '33rem',
+        '42rem': '42rem',
         '48rem': '48rem',
       },
     },
