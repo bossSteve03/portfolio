@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import github_icon from '../../assets/github.png'
 import linkedin_icon from '../../assets/linkedin.png'
 import profile_pic from '../../assets/pwpp.png'
@@ -10,8 +10,11 @@ import tailwind_icon from '../../assets/tailwindcss.png'
 import node_icon from '../../assets/node-js.png'
 import postgres_icon from '../../assets/postgre.png'
 import sql_icon from '../../assets/sql.png'
+import pin_emoji from '../../assets/round_pushpin.png'
+import wave_emoji from '../../assets/wave.png'
 import { Element } from 'react-scroll'
 import { Typewriter } from '../../components'
+import styles from './styles.module.css'
 
 export default function Home() {
 
@@ -28,8 +31,8 @@ export default function Home() {
             <h1>
               Steve Totev
             </h1>
-            <h1 className='animate-wiggle-more animate-infinite animate-duration-1000 animate-delay-0 animate-ease-linear animate-normal animate-fill-both'>
-              👋
+            <h1 className={`animate-wiggle-more animate-infinite animate-duration-1000 animate-delay-0 animate-ease-linear animate-normal animate-fill-both ${styles['custom-transform-origin']}`}>
+              <img src={wave_emoji} alt="hand wave" className='w-12 h-12'/>
             </h1>
           </div>
           <div className='flex flex-row text-2xl font-normal w-28rem mb-4 text-gray-700'>
@@ -44,9 +47,12 @@ export default function Home() {
         {/* <p className='place-self-end h-64 border-r border-black'></p> */}
       </div>
       <div className="flex justify-between flex-row-reverse pt-1 animate-fade-up animate-once animate-duration-1000 animate-ease-in-out animate-delay-300 w-fit mx-auto my-0 px-12">
-        <p className='text-lg font-normal mb-2 text-gray-700 w-56 text-right'>
-          Based in London, UK. 📍
-        </p>
+        <div className='flex flex-row gap-1'>
+          <p className='text-lg font-normal mb-2 text-gray-700 w-56 text-right'>
+            Based in London, UK.
+          </p>
+          <img src={pin_emoji} alt="pin" className='w-6 h-6'/>
+        </div>
         <p className='w-28rem'></p>
       </div>
       <div id="tech-stack" className='flex flex-row mx-auto my-7 gap-7 w-48rem animate-fade-up animate-once animate-duration-1000 animate-delay-500 animate-ease-in-out'>
