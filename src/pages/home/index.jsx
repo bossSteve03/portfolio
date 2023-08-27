@@ -11,7 +11,7 @@ import node_icon from '../../assets/node-js.png'
 import postgres_icon from '../../assets/postgre.png'
 import sql_icon from '../../assets/sql.png'
 import { Element } from 'react-scroll'
-import Typed from 'react-typed'
+import { Typewriter } from '../../components'
 
 export default function Home() {
 
@@ -32,9 +32,9 @@ export default function Home() {
               👋
             </h1>
           </div>
-          <p className='text-2xl font-normal w-28rem mb-4 text-gray-700'>
-            A passionate <Typed strings={['Full Stack Developer', 'JavaScript Developer', 'Web Developer']} typeSpeed={60} backSpeed={40} loop />
-          </p>
+          <div className='flex flex-row text-2xl font-normal w-28rem mb-4 text-gray-700'>
+            <p className='pr-1'>A passionate</p><Typewriter />
+          </div>
           <div id="hero-links" className='flex flex-row gap-2'>
             <a href="https://github.com/bossSteve03" target="_blank"><img src={github_icon} alt="github link" className='h-10 w-10 rounded-lg'/></a>
             <a href="https://www.linkedin.com/in/stevetotev/" target="_blank"><img src={linkedin_icon} alt="LinkedIn Link" className='h-10 w-10 rounded-lg'/></a>
