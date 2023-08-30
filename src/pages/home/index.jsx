@@ -2,6 +2,8 @@ import React from 'react'
 import github_icon from '../../assets/github.png'
 import linkedin_icon from '../../assets/linkedin.png'
 import profile_pic from '../../assets/pwpp.png'
+import pin_emoji from '../../assets/round_pushpin.png'
+import wave_emoji from '../../assets/wave.png'
 import html5_icon from '../../assets/html-5.png'
 import css3_icon from '../../assets/css-3.png'
 import js_icon from '../../assets/js.png'
@@ -10,8 +12,6 @@ import tailwind_icon from '../../assets/tailwindcss.png'
 import node_icon from '../../assets/node-js.png'
 import postgres_icon from '../../assets/postgre.png'
 import sql_icon from '../../assets/sql.png'
-import pin_emoji from '../../assets/round_pushpin.png'
-import wave_emoji from '../../assets/wave.png'
 import { Element } from 'react-scroll'
 import { Typewriter } from '../../components'
 import styles from './styles.module.css'
@@ -24,10 +24,10 @@ export default function Home() {
     }}>
       <div id="hero" className='flex flex-row w-fit px-12 justify-center mx-auto my-0 pt-28 border-b border-black animate-fade-up animate-once animate-duration-1000 animate-ease-in-out animate-delay-300'>
         <div id="inner-hero" className='flex flex-col my-auto pt-10'>
-          <h1 className='text-3xl font-normal w-28rem -mb-1'>
+          <h1 className='text-3xl font-normal w-30rem -mb-1'>
             Hi there, I'm
           </h1>
-          <div className='flex flex-row gap-2 text-5xl font-bold w-28rem mb-1'>
+          <div className='flex flex-row gap-2 text-5xl font-bold w-30rem mb-1'>
             <h1>
               Steve Totev
             </h1>
@@ -35,7 +35,7 @@ export default function Home() {
               <img src={wave_emoji} alt="hand wave" className='w-12 h-12'/>
             </h1>
           </div>
-          <div className='flex flex-row text-2xl font-normal w-28rem mb-4 text-gray-700'>
+          <div className='flex flex-row text-2xl font-normal w-30rem mb-4 text-gray-700'>
             <p className='pr-1'>A passionate</p><Typewriter />
           </div>
           <div id="hero-links" className='flex flex-row gap-2'>
@@ -53,18 +53,18 @@ export default function Home() {
           </p>
           <img src={pin_emoji} alt="pin" className='w-6 h-6'/>
         </div>
-        <p className='w-28rem'></p>
+        <p className='w-30rem'></p>
       </div>
-      <div id="tech-stack" className='flex flex-row mx-auto my-7 gap-7 w-48rem animate-fade-up animate-once animate-duration-1000 animate-delay-500 animate-ease-in-out'>
+      <div id="tech-stack" className='flex flex-row mx-auto my-7 gap-7 justify-center animate-fade-up animate-once animate-duration-1000 animate-ease-in-out animate-delay-500'>
         <h4 className='border-r border-black pr-5 place-self-center py-1 text-lg pl-7 mr-5'>Tech stack</h4>
-        <img src={html5_icon} alt="HTML 5" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
-        <img src={css3_icon} alt="CSS 3" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
-        <img src={js_icon} alt="JavaScript" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
-        <img src={sql_icon} alt="SQL" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
-        <img src={react_icon} alt="React" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
-        <img src={tailwind_icon} alt="Tailwindcss" className='w-10 h-6 my-auto transform hover:scale-125 transition-transform duration-300'/>
-        <img src={node_icon} alt="Node.js" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
-        <img src={postgres_icon} alt="PostgreSQL" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+        <img src={html5_icon} title='HTML5' alt="HTML 5" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+        <img src={css3_icon} title='CSS3' alt="CSS 3" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+        <img src={js_icon} title='JavaScript' alt="JavaScript" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+        {/* <img src={sql_icon} title='SQL' alt="SQL" className='w-10 transform hover:scale-125 transition-transform duration-300'/> */}
+        <img src={react_icon} title='React' alt="React" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+        {/* <img src={tailwind_icon} title='Tailwindcss' alt="Tailwindcss" className='w-10 h-6 my-auto transform hover:scale-125 transition-transform duration-300'/> */}
+        <img src={node_icon} title='Node.js' alt="Node.js" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+        <img src={postgres_icon} title='PostgreSQL' alt="PostgreSQL" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
       </div>
     </div>
     </Element>
