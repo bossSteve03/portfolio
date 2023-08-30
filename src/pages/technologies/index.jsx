@@ -7,6 +7,10 @@ import tailwind_icon from '../../assets/tailwindcss.png'
 import node_icon from '../../assets/node-js.png'
 import postgres_icon from '../../assets/postgre.png'
 import sql_icon from '../../assets/sql.png'
+import bootstrap_icon from '../../assets/bootstrap.png'
+import figma_icon from '../../assets/figma.png'
+import photoshop_icon from '../../assets/photoshop.png'
+import vite_icon from '../../assets/vite.svg'
 
 export default function Technologies() {
   return (
@@ -21,6 +25,10 @@ export default function Technologies() {
       <img src={tailwind_icon} title='Tailwindcss' alt="Tailwindcss" className='w-10 h-6 my-auto transform hover:scale-125 transition-transform duration-300'/>
       <img src={node_icon} title='Node.js' alt="Node.js" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
       <img src={postgres_icon} title='PostgreSQL' alt="PostgreSQL" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+      <img src={bootstrap_icon} title='Bootstrap' alt="Bootstrap" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+      <img src={figma_icon} title='Figma' alt="Figma" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+      <img src={photoshop_icon} title='Adobe Photoshop' alt="Photoshop" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
+      <img src={vite_icon} title='Vite' alt="Vite" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
     </div>
     <div id="tech-list" className='flex flex-row justify-around mx-12 my-7 text-center'>
       <p></p>
@@ -45,7 +53,7 @@ export default function Technologies() {
         <h1 className="font-medium border-b border-black mb-1">Backend</h1>
         <p className="">Node.js</p>
         <p className="">Express.js</p>
-        <p className="">PostgreSQL</p>
+        <p className=""></p>
         <p className="">Nodemailer</p>
         <p className="">Nodemon</p>
       </div>
