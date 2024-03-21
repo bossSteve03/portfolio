@@ -6,7 +6,7 @@ const TypedText = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['Full Stack Developer', 'JavaScript Developer', 'Web Developer'],
+      strings: ['Tech Enthusiast', 'Software Apprentice', 'Web Developer'],
       typeSpeed: 60,
       backSpeed: 40,
       loop: true,
