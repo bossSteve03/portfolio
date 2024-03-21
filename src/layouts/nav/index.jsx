@@ -23,7 +23,7 @@ export default function Nav() {
 
   return (
     <>
-    <nav className={`flex flex-row justify-between w-screen py-4 px-6 z-50 bg-white border-b border-gray-200 ${isSticky ? 'fixed top-0 animate-fade-down animate-duration-800 animate-ease-out animate-once bg-opacity-90' : 'absolute'}`}>
+    <nav className={`flex flex-row justify-between w-full py-4 px-6 z-50 bg-white border-b border-gray-200 ${isSticky ? 'fixed top-0 animate-fade-down animate-duration-800 animate-ease-out animate-once bg-opacity-90' : 'absolute'}`}>
       <h1 className='text-2xl font-semibold'>Steve Totev</h1>
       <div id="nav-btns" className='flex flex-row text-lg place-self-center gap-5 text-gray-400'>
         {/* Use the Link component for navigation */}
