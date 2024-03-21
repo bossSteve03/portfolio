@@ -18,7 +18,7 @@ export default function About() {
         <p className='w-30rem font-light'>
         Welcome to my portfolio! I'm a passionate Full Stack Web Developer who thrives on turning complex challenges into elegant solutions through code.</p>
         <p className='w-30rem font-light'>With a love for collaborative work, I feel comfortable working in teams both small and large. I enjoy being part of teams that share my dedication to excellence, I also highly value strong work cultures/ethics.</p>
-        <p className='w-30rem font-light'>Beyond coding, I'm an avid sports enthusiast, and I'm committed to continuous learning and embracing new opportunities for growth. Let's push boundaries and innovate together!
+        <p className='w-30rem font-light'>Beyond coding, I'm an avid sports enthusiast, traveller, and photographer. I also have a personal commitment to continuous learning and embracing new opportunities for growth. Let's push boundaries and innovate together!
         </p>
         </div>
       </div>

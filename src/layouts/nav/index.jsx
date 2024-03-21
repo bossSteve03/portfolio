@@ -18,8 +18,6 @@ export default function Nav() {
       window.removeEventListener('scroll', handleScroll)
     };
   }, []);
-  
-  const isActive = true;
 
   return (
     <>
