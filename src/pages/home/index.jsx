@@ -55,7 +55,7 @@ export default function Home() {
         </div>
         <p className='w-30rem'></p>
       </div>
-      <div id="tech-stack" className='flex flex-row mx-auto my-7 gap-7 justify-center animate-fade-up animate-once animate-duration-1000 animate-ease-in-out animate-delay-500'>
+      <div id="tech-stack" className='w-fit flex flex-row mx-auto my-7 gap-7 justify-center animate-fade-up animate-once animate-duration-1000 animate-ease-in-out animate-delay-500'>
         <h4 className='border-r border-black pr-5 place-self-center py-1 text-lg pl-7 mr-5'>Tech stack</h4>
         <img src={html5_icon} title='HTML5' alt="HTML 5" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
         <img src={css3_icon} title='CSS3' alt="CSS 3" className='w-10 transform hover:scale-125 transition-transform duration-300'/>
