@@ -9,7 +9,7 @@ export default function Contact() {
       <form action="" method="post">
 
       </form>
-      <h2>For safety reasons, I have excluded my personal mobile number from this portfolio but feel free to contact me through the above methods to discuss about future phone calls.</h2>
+      <h2></h2>
     </div>
   )
 }

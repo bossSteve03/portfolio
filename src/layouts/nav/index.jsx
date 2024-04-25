@@ -7,7 +7,7 @@ export default function Nav() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 610) {
-        setIsSticky(true);
+        setIsSticky(true)
       } else {
         setIsSticky(false);
       };
