@@ -1,4 +1,3 @@
-import React from 'react';
 import Lottie from 'lottie-react';
 import loadingAnimation from '../../assets/animation_llxm8r05.json'; // Replace with your animation file path
 

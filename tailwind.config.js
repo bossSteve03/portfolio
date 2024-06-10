@@ -538,7 +538,7 @@ export default {
       '4/6': '66.666667%',
       '5/6': '83.333333%',
       full: '100%',
-      screen: '100vh',
+      screen: '100lvh',
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',

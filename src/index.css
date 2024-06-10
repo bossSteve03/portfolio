@@ -5,3 +5,25 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+html {
+  @media screen and (min-width: 320px) {
+    font-size: 33%;
+  };
+
+  @media screen and (min-width: 480px) {
+    font-size: 55%;
+  };
+
+  @media screen and (min-width: 768px) {
+    font-size: 77%;
+  };
+
+  @media screen and (min-width: 1024px) {
+    font-size: 100%;
+  };
+
+  @media screen and (min-width: 1200px) {
+    font-size: 120%;
+  };
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Element } from 'react-scroll'
 import CodeCircle from '../../assets/code-circle-icon.png'
-import ZenPic1 from '../../assets/IMG_8306.jpeg'
+import ZenPic1 from '../../assets/zen.jpeg'
 
 export default function About() {
   return (

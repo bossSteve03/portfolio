@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import { Nav } from './layouts';
-import { Home, Technologies, About, Projects } from './pages';
+import { Home, Technologies, About, Projects, Test } from './pages';
 import { LoadingScreen } from './components';
 
 function App() {
@@ -15,17 +16,20 @@ function App() {
 
   return (
     <>
-    {
-      isLoading ?
-      <LoadingScreen /> :
-      <>
-      <Nav />
-      <Home />
-      <Technologies />
-      <About />
-      <Projects />
-      </>
-    }
+    <Routes>
+      <Route path="/" element={
+        isLoading ?
+        <LoadingScreen /> :
+        <>
+        <Nav />
+        <Home />
+        <Technologies />
+        <About />
+        <Projects />
+        </>
+        }/>
+      <Route path='/test' element={<Test/>} />
+    </Routes>
     </>
   )
 }
