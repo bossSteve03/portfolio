@@ -24,6 +24,18 @@ export default {
         '42rem': '42rem',
         '48rem': '48rem',
       },
+      animation: {
+        'infinite-scroll': 'scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      maskImage: {
+        'scroll-mask': 'linear-gradient(90deg, transparent, white 20%, white 80%, transparent)',
+      },
     },
     accentColor: ({ theme }) => ({
       ...theme('colors'),

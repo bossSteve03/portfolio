@@ -2,6 +2,7 @@ import html5_icon from '../../assets/html-5.png'
 import css3_icon from '../../assets/css-3.png'
 import js_icon from '../../assets/js.png'
 import react_icon from '../../assets/react.png'
+import reacttest_icon from '../../assets/reacttestlibrary.png'
 import tailwind_icon from '../../assets/tailwindcss.png'
 import node_icon from '../../assets/node-js.png'
 import postgres_icon from '../../assets/postgre.png'
@@ -10,6 +11,7 @@ import bootstrap_icon from '../../assets/bootstrap.png'
 import figma_icon from '../../assets/figma.png'
 import photoshop_icon from '../../assets/photoshop.png'
 import vite_icon from '../../assets/vite.svg'
+import vitest_icon from '../../assets/vitest.png'
 import github_icon from '../../assets/github_icon.png'
 import git_icon from '../../assets/git.png'
 import chrome_icon from '../../assets/google_chrome-icon.svg'
@@ -40,9 +42,9 @@ const techItems = [
   { name: 'Chrome Dev Tools', icon: chrome_icon },
   { name: 'Firebase', icon: firebase_icon },
   { name: 'Vite', icon: vite_icon },
-  { name: 'Vitest', icon: image_icon },
+  { name: 'Vitest', icon: vitest_icon },
   { name: 'Jest', icon: jest_icon },
-  { name: 'React Testing Library', icon: image_icon },
+  { name: 'React Testing Library', icon: reacttest_icon },
   { name: 'Nodemon', icon: nodemon_icon },
   { name: 'Nodemailer', icon: nodemailer_icon },
   { name: 'Netlify', icon: netlify_icon },
