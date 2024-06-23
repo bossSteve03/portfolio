@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect, useState} from 'react'
 import { TechStackHome } from '../../components'
 import github_icon from '../../assets/github.png'
 import linkedin_icon from '../../assets/linkedin.png'
@@ -10,6 +10,16 @@ import { Typewriter } from '../../components'
 import styles from './styles.module.css'
 
 export default function Home() {
+
+  const [size, setSize] = useState(
+    window.matchMedia("(min-width: 500px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(min-width: 500px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
 
   return (
     <Element name='home'>

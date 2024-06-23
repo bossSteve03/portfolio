@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
-import './styles.css';
+import './styles.module.css';
 
 // import required modules
 import { EffectCards } from 'swiper/modules';
@@ -16,7 +16,7 @@ export default function App() {
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className={"mySwiper"}
+        className={`${styles["mySwiper"]}`}
       >
         <SwiperSlide></SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
