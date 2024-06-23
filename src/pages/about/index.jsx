@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import styles from './styles.module.css'
 import { Element } from 'react-scroll'
 import CodeCircle from '../../assets/code-circle-icon.png'
 import ZenPic1 from '../../assets/zen.jpeg'
@@ -17,7 +18,7 @@ export default function About() {
 
   return (
     <Element name='about'>
-    <div id='section' className='flex flex-col justify-between h-screen p-20 bg-sky-300 overflow-hidden'>
+    <div id='section' className={`flex flex-col justify-between h-screen p-20 overflow-hidden ${styles['section']}`}>
       <h1 className='text-3xl m-6 p-4 border-b-2 border-black'>About Me</h1>
       <div id="hero" className='flex flex-row px-10 items-center gap-20 self-center'>
         <div id="images" className=''>
@@ -25,7 +26,7 @@ export default function About() {
           <img src={CodeCircle} className='animate-spin animate-infinite animate-duration-[4000ms] h-20 absolute -bottom-8 -right-8' alt="A circle spinning with the words 'Hire Me'" />
           </div>
         </div>
-        <div className="flex flex-col gap-3 font-light text-base">
+        <div className="flex flex-col gap-2 font-light text-base bg-white p-6 rounded-xl">
         <p className='w-30rem'>
         Welcome to my portfolio! I'm a passionate Software Apprentice who thrives when facing complex challenges and overcoming them to produce elegant solutions in code.
         </p>
