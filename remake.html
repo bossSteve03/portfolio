@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve Totev | Software Engineer | Full-Stack Developer | London, UK</title>
+  <meta name="description" content="Steve Totev is a London-based Software Engineer specializing in full-stack development. Experience with React, Node.js, C#, PHP, Azure, and modern or legacy web technologies.">
+  <meta name="author" content="Steve Totev">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Steve Totev | Software Engineer | London">
+  <meta property="og:description" content="Full-stack developer Steve Totev with experience in modern and legacy web technologies. Based in London, UK.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stevetotev.co.uk">
+  <meta property="og:image" content="https://stevetotev.co.uk/assets/steve-totev-og-image.jpg">
+  <link rel="canonical" href="https://stevetotev.co.uk">
+  <meta name="theme-color" content="#0a0e17">
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Steve Totev",
+    "jobTitle": "Software Engineer",
+    "url": "https://stevetotev.co.uk",
+    "image": "https://stevetotev.co.uk/assets/steve-totev-profile.jpg",
+    "sameAs": [
+      "https://uk.linkedin.com/in/stevetotev",
+      "https://github.com/bosssteve03",
+      "https://instagram.com/totevsteve"
+    ],
+    "knowsAbout": ["JavaScript", "Full-Stack Development", "React", "Node.js", "PHP", "C#", "C Sharp", "Figma", "SQL", "Azure", "Software Engineering"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "UK"
+    }
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    :root {
+      /* Base colors - refined palette */
+      --bg-primary: #0a0e17;
+      --bg-secondary: #131825;
+      --bg-surface: #1a2235;
+      --bg-overlay: rgba(255, 255, 255, 0.05);
+      
+      --text-primary: rgba(255, 255, 255, 0.95);
+      --text-secondary: rgba(255, 255, 255, 0.75);
+      --text-tertiary: rgba(255, 255, 255, 0.55);
+      
+      --border-light: rgba(255, 255, 255, 0.12);
+      --border-medium: rgba(255, 255, 255, 0.08);
+      
+      --accent-primary: #6d8cff;
+      --accent-secondary: #33d6a6;
+      --accent-tertiary: #ff6b9d;
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+      --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.35);
+      --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.45);
+      
+      --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      
+      --header-height: 80px;
+      --content-width: 1200px;
+      --section-spacing: 96px;
+    }
+
+    /* Light theme */
+    [data-theme="light"] {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-overlay: rgba(0, 0, 0, 0.04);
+      
+      --text-primary: rgba(10, 14, 23, 0.95);
+      --text-secondary: rgba(10, 14, 23, 0.75);
+      --text-tertiary: rgba(10, 14, 23, 0.55);
+      
+      --border-light: rgba(10, 14, 23, 0.12);
+      --border-medium: rgba(10, 14, 23, 0.08);
+      
+      --shadow-sm: 0 4px 12px rgba(10, 14, 23, 0.08);
+      --shadow-md: 0 8px 32px rgba(10, 14, 23, 0.12);
+      --shadow-lg: 0 16px 48px rgba(10, 14, 23, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + 24px);
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(42px, 5vw, 64px);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      width: 48px;
+      height: 3px;
+      background: var(--accent-primary);
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: var(--text-secondary);
+    }
+
+    .text-lead {
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+    }
+
+    .text-small {
+      font-size: 14px;
+      color: var(--text-tertiary);
+    }
+
+    /* Layout */
+    .container {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: var(--section-spacing) 0;
+      position: relative;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--border-light);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      border-radius: var(--radius-sm);
+    }
+
+    .logo-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--text-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: color var(--transition);
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-primary);
+      transition: width var(--transition);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+      padding-top: calc(var(--header-height) + 96px);
+      padding-bottom: 96px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(135deg, 
+        rgba(109, 140, 255, 0.1) 0%,
+        rgba(51, 214, 166, 0.05) 50%,
+        transparent 100%);
+      border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--bg-overlay);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      color: var(--accent-primary);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+
+    .hero-tag::before {
+      content: '→';
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      margin-top: 48px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all var(--transition);
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    .btn-primary {
+      background: var(--accent-primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: color-mix(in srgb, var(--accent-primary) 90%, white);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-secondary {
+      background: var(--bg-overlay);
+      color: var(--text-primary);
+      border: 1px solid var(--border-light);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-surface);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px;
+      margin-top: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .skill-category h3 {
+      margin-bottom: 24px;
+      color: var(--accent-primary);
+    }
+
+    .skill-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill-item {
+      padding: 8px 16px;
+      background: var(--bg-overlay);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: all var(--transition);
+    }
+
+    .skill-item:hover {
+      background: var(--bg-surface);
+      border-color: var(--accent-primary);
+      color: var(--text-primary);
+      transform: translateY(-2px);
+    }
+
+    /* Technologies - Neon Section */
+    .tech-section {
+      background: linear-gradient(135deg, 
+        rgba(26, 34, 53, 0.8) 0%,
+        rgba(19, 24, 37, 0.9) 100%);
+      border-radius: var(--radius-xl);
+      padding: 64px;
+      margin-top: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    [data-theme="light"] .tech-section {
+      background: linear-gradient(135deg, 
+        rgba(248, 250, 252, 0.8) 0%,
+        rgba(241, 245, 249, 0.9) 100%);
+    }
+
+    .tech-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, 
+        transparent,
+        var(--accent-primary),
+        var(--accent-secondary),
+        var(--accent-tertiary),
+        transparent);
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .tech-card {
+      background: var(--bg-overlay);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      position: relative;
+      transition: all var(--transition);
+    }
+
+    .tech-card:hover {
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 32px rgba(109, 140, 255, 0.2);
+    }
+
+    .tech-card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .tech-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--text-primary);
+    }
+
+    .tech-icon.core { background: linear-gradient(135deg, #6d8cff, #8a6dff); }
+    .tech-icon.frontend { background: linear-gradient(135deg, #33d6a6, #33a6d6); }
+    .tech-icon.backend { background: linear-gradient(135deg, #ff6b9d, #ff8a6b); }
+    .tech-icon.data { background: linear-gradient(135deg, #ffd166, #ff9e6b); }
+    .tech-icon.cloud { background: linear-gradient(135deg, #6bc5ff, #6b8cff); }
+    .tech-icon.tools { background: linear-gradient(135deg, #a66dff, #ff6da6); }
+
+    .tech-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tech-pill {
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      font-size: 13px;
+      color: var(--text-secondary);
+      transition: all var(--transition);
+    }
+
+    .tech-pill:hover {
+      background: var(--accent-primary);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Work Experience */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 48px auto 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border-light);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 48px;
+      padding-left: 72px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 16px;
+      top: 8px;
+      width: 16px;
+      height: 16px;
+      background: var(--accent-primary);
+      border-radius: 50%;
+      border: 4px solid var(--bg-surface);
+    }
+
+    .timeline-date {
+      color: var(--accent-secondary);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    /* Personal Section */
+    .personal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 48px;
+      margin-top: 48px;
+    }
+
+    .personal-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform var(--transition);
+    }
+
+    .personal-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .personal-image {
+      height: 200px;
+      background: var(--bg-overlay);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .personal-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .personal-card:hover .personal-image img {
+      transform: scale(1.05);
+    }
+
+    .personal-content {
+      padding: 32px;
+    }
+
+    .flag-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: linear-gradient(135deg, #ff0000, #ff0000 50%, #ffa500 50%, #ffa500 75%, #ff0000 75%, #ff0000);
+      border-radius: 4px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-secondary);
+      padding: 64px 0 32px;
+      margin-top: var(--section-spacing);
+      border-top: 1px solid var(--border-light);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-light);
+      color: var(--text-tertiary);
+      font-size: 14px;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      position: relative;
+      width: 48px;
+      height: 24px;
+      background: var(--bg-overlay);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .theme-toggle::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background: var(--accent-primary);
+      border-radius: 50%;
+      transition: transform var(--transition);
+    }
+
+    [data-theme="light"] .theme-toggle::before {
+      transform: translateX(24px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      :root {
+        --section-spacing: 64px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .tech-section {
+        padding: 32px;
+      }
+
+      .tech-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      :root {
+        --section-spacing: 48px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+    }
+
+    /* Utility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">Steve Totev</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#personal">Personal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tag">Full-stack</span>
+          <h1>Building digital solutions that <span class="gradient-text">just work</span></h1>
+          <p class="text-lead">
+            Software engineer based in London, focused on creating clean, maintainable systems with polished user experiences. 
+            I bridge technical implementation with practical delivery, ensuring solutions are both robust and user-friendly.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View Experience</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Approach</h3>
+            <p>
+              I believe in solving the right problems first. My process starts with understanding requirements clearly, 
+              then choosing the simplest robust approach before iterating toward polish.
+            </p>
+            <p>
+              Whether working on front-end interfaces or back-end systems, I prioritize performance, accessibility, 
+              and maintainability; building solutions that stand the test of time.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Focus</h3>
+            <p>
+              Full-stack development, with deep experience across modern web technologies. 
+              I enjoy shipping end-to-end solutions that deliver real value.
+            </p>
+            <p>
+              Currently focused on internal platforms, workflow automation, and improving development practices 
+              through better tooling and processes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Development</h3>
+            <div class="skill-items">
+              <span class="skill-item">Full-Stack Development</span>
+              <span class="skill-item">Web Applications</span>
+              <span class="skill-item">API Design</span>
+              <span class="skill-item">System Architecture</span>
+              <span class="skill-item">Performance Optimization</span>
+              <span class="skill-item">Testing & QA</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Process</h3>
+            <div class="skill-items">
+              <span class="skill-item">Agile Methodologies</span>
+              <span class="skill-item">Scrum</span>
+              <span class="skill-item">Kanban</span>
+              <span class="skill-item">CI/CD</span>
+              <span class="skill-item">Code Review</span>
+              <span class="skill-item">Technical Documentation</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Collaboration</h3>
+            <div class="skill-items">
+              <span class="skill-item">Team Leadership</span>
+              <span class="skill-item">Mentoring</span>
+              <span class="skill-item">Stakeholder Communication</span>
+              <span class="skill-item">Requirements Analysis</span>
+              <span class="skill-item">Project Planning</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Delivery</h3>
+            <div class="skill-items">
+              <span class="skill-item">Product Mindset</span>
+              <span class="skill-item">User Experience</span>
+              <span class="skill-item">Quality Assurance</span>
+              <span class="skill-item">Deployment Strategies</span>
+              <span class="skill-item">Monitoring & Observability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies -->
+    <section id="technologies" class="section">
+      <div class="container">
+        <h2>Technologies</h2>
+        <p class="text-lead" style="max-width: 600px; margin-bottom: 0;">
+          A focused selection of tools and technologies I work with regularly, grouped by area of application.
+        </p>
+        
+        <div class="tech-section">
+          <div class="tech-grid">
+            <!-- Core -->
+            <div class="tech-card">
+              <div class="tech-card-header">
+                <div class="tech-icon core">JS</div>
+                <div>
+                  <h3>Core</h3>
+                  <p class="text-small">Foundational languages</p>
+                </div>
+              </div>
+              <div class="tech-pills">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">C#</span>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="tech-card">
+              <div class="tech-card-header">
+                <div class="tech-icon frontend">UI</div>
+                <div>
+                  <h3>Frontend</h3>
+                  <p class="text-small">Interface development</p>
+                </div>
+              </div>
+              <div class="tech-pills">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">Vue.js</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">Styled Components</span>
+                <span class="tech-pill">Framer Motion</span>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="tech-card">
+              <div class="tech-card-header">
+                <div class="tech-icon backend">API</div>
+                <div>
+                  <h3>Backend</h3>
+                  <p class="text-small">Server & services</p>
+                </div>
+              </div>
+              <div class="tech-pills">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">NestJS</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">GraphQL</span>
+                <span class="tech-pill">WebSockets</span>
+              </div>
+            </div>
+
+            <!-- Data -->
+            <div class="tech-card">
+              <div class="tech-card-header">
+                <div class="tech-icon data">DB</div>
+                <div>
+                  <h3>Data</h3>
+                  <p class="text-small">Storage & analysis</p>
+                </div>
+              </div>
+              <div class="tech-pills">
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">Prisma</span>
+                <span class="tech-pill">Power BI</span>
+              </div>
+            </div>
+
+            <!-- Cloud -->
+            <div class="tech-card">
+              <div class="tech-card-header">
+                <div class="tech-icon cloud">☁️</div>
+                <div>
+                  <h3>Cloud</h3>
+                  <p class="text-small">Infrastructure & deployment</p>
+                </div>
+              </div>
+              <div class="tech-pills">
+                <span class="tech-pill">Azure</span>
+                <span class="tech-pill">AWS</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Kubernetes</span>
+                <span class="tech-pill">Terraform</span>
+                <span class="tech-pill">Netlify</span>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="tech-card">
+              <div class="tech-card-header">
+                <div class="tech-icon tools">🛠️</div>
+                <div>
+                  <h3>Tools</h3>
+                  <p class="text-small">Development workflow</p>
+                </div>
+              </div>
+              <div class="tech-pills">
+                <span class="tech-pill">Git</span>
+                <span class="tech-pill">VS Code</span>
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Jira</span>
+                <span class="tech-pill">Jest</span>
+                <span class="tech-pill">Vite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <p class="text-lead" style="max-width: 600px; margin-bottom: 48px;">
+          Professional journey through software development roles, focusing on building robust applications and adopting modern methodologies.
+        </p>
+
+        <div class="timeline">
+          <!-- DEKRA - Current Role -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Apr 2025 - Present</div>
+            <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px;">
+              <div class="company-icon" style="width: 48px; height: 48px; background: var(--bg-overlay); border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGiSiBVFBk7fA/company-logo_100_100/company-logo_100_100/0/1688974801687/dekra_logo?e=1770854400&v=beta&t=G-L_N4xP1F_JQWa-a1f1oWNXvvhr8Bpx_pAh_EMV5yc" alt="DEKRA" style="width: 100%; height: 100%; object-fit: contain;">
+              </div>
+              <div>
+                <h3 style="margin-bottom: 4px;">Junior Software Developer</h3>
+                <p class="text-small" style="margin-bottom: 8px;">DEKRA · Full-time</p>
+                <p style="color: var(--text-secondary); margin-bottom: 16px;">
+                  Maintain legacy and current software applications. Develop and test new software applications and features. 
+                  Provide application support where needed.
+                </p>
+                <div class="skill-items">
+                  <span class="skill-item">Agile Methodologies</span>
+                  <span class="skill-item">Agile Web Development</span>
+                  <span class="skill-item">JavaScript</span>
+                  <span class="skill-item">Node.js</span>
+                  <span class="skill-item">Software Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEKRA - Previous Role -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Oct 2023 - Mar 2025 · 1 yr 6 mos</div>
+            <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px;">
+              <div class="company-icon" style="width: 48px; height: 48px; background: var(--bg-overlay); border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGiSiBVFBk7fA/company-logo_100_100/company-logo_100_100/0/1688974801687/dekra_logo?e=1770854400&v=beta&t=G-L_N4xP1F_JQWa-a1f1oWNXvvhr8Bpx_pAh_EMV5yc" alt="DEKRA" style="width: 100%; height: 100%; object-fit: contain;">
+              </div>
+              <div>
+                <h3 style="margin-bottom: 4px;">Junior Software Apprentice</h3>
+                <p class="text-small" style="margin-bottom: 8px;">DEKRA · Apprenticeship</p>
+                <div class="skill-items" style="margin-top: 12px;">
+                  <span class="skill-item">Scrum</span>
+                  <span class="skill-item">Node.js</span>
+                  <span class="skill-item">JavaScript</span>
+                  <span class="skill-item">Full-stack Development</span>
+                  <span class="skill-item">Web Applications</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- La Fosse -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Feb 2023 - May 2023 · 4 mos</div>
+            <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px;">
+              <div class="company-icon" style="width: 48px; height: 48px; background: var(--bg-overlay); border-radius: var(--radius-md); border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden;">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQH2VDhdiXGDhQ/company-logo_100_100/B4EZasGrz9HMAQ-/0/1746644156022/la_fosse_logo?e=1770854400&v=beta&t=-959u--TJ--yWUCJ3FZ2QMzPC1CMhvDk1CGMSgogiks" alt="DEKRA" style="width: 100%; height: 100%; object-fit: contain;">
+              </div>
+              <div>
+                <h3 style="margin-bottom: 4px;">Software Developer Trainee</h3>
+                <p class="text-small" style="margin-bottom: 8px;">La Fosse Academy · Greater London · Hybrid</p>
+                <p style="color: var(--text-secondary); margin-bottom: 16px;">
+                  Intensive 12-week bootcamp focusing on technology fundamentals and software development principles. 
+                  Part of an award-winning academy that accelerates technology careers through structured learning and mentorship.
+                </p>
+                <div class="skill-items">
+                  <span class="skill-item">Node.js</span>
+                  <span class="skill-item">Software Development</span>
+                  <span class="skill-item">JavaScript</span>
+                  <span class="skill-item">Web Development</span>
+                  <span class="skill-item">Problem Solving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total Experience -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: var(--accent-secondary);"></div>
+            <div class="timeline-date" style="color: var(--accent-secondary);">Total Experience</div>
+            <div style="padding: 20px; background: var(--bg-overlay); border-radius: var(--radius-md); margin-top: 8px;">
+              <h4 style="margin-bottom: 8px;">2+ years professional experience</h4>
+              <p class="text-small" style="margin-bottom: 0;">
+                Building from apprenticeship to junior developer role, with continuous growth in full-stack development, 
+                Agile methodologies, and software engineering best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal -->
+    <section id="personal" class="section">
+      <div class="container">
+        <h2>Personal</h2>
+        <div class="personal-grid">
+          <!-- Hispanic Culture & Language -->
+          <div class="personal-card">
+            <!-- <div class="personal-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png'); background-size: cover; background-position: center;"> -->
+            <div class="personal-image" style="background: linear-gradient(to bottom,#c60b1e 25%,#ffc400 30%,#ffc400 75%,#c60b1e 80%);">
+              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+              <!-- <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px; backdrop-filter: blur(1.5px);"> -->
+                🇪🇸
+              </div>
+            </div>
+            <div class="personal-content">
+              <h3><span class="flag-icon"></span>Hispanic Culture & Language</h3>
+              <p>
+                I’ve always been drawn to Hispanic culture, from the food and music to the way language is used day to day.
+                What started as curiosity turned into learning Spanish properly and using it whenever I get the chance.
+              </p>
+              <p>
+                I’m at a conversational level now and getting more comfortable having real conversations.
+                I enjoy Spanish media, picking up expressions, and learning how culture and language connect in everyday life.
+              </p>
+            </div>
+          </div>
+
+          <!-- Family Dog -->
+          <div class="personal-card">
+            <div class="personal-image">
+              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(155deg, #6c757d 30%, #359aff 50%, #dee2e6 70%); color: white; font-size: 48px;">
+                🐺
+              </div>
+            </div>
+            <div class="personal-content">
+              <h3>Zen the Husky</h3>
+              <p>
+                This is Zen. He’s my husky and, at the time of writing, he’s 12 years old.
+                He’s stubborn, dramatic, and absolutely convinced he’s still a puppy.
+              </p>
+              <p>
+                Our walks are one of my favourite parts of the day.
+                They’re a great excuse to get outside, clear my head, and let him pretend he’s leading an expedition instead of just going around the block.
+              </p>
+            </div>
+          </div>
+
+          <!-- iPhone Photography -->
+          <div class="personal-card">
+            <div class="personal-image" style="background: linear-gradient(135deg, #fb00ff, #3ba7ff, #ffa500);">
+              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                📱
+              </div>
+            </div>
+            <div class="personal-content">
+              <h3>iPhone Photography</h3>
+              <p>
+                I enjoy photography as a way to slow down and notice details.
+                All of my photos are taken on an iPhone, which keeps things simple and accessible.
+              </p>
+              <p>
+                I focus more on capturing the small moments in life instead of high level equipment and minute detail.
+                It’s about capturing moments and views that hold a memory rather than chasing the perfect shot.
+              </p>
+            </div>
+          </div>
+          <!-- Photo Gallery Card -->
+          <div class="personal-card">
+            <div class="personal-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); position: relative; cursor: pointer;" id="galleryTrigger">
+              <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; font-size: 48px; text-align: center;">
+                📸
+                <div style="font-size: 16px; margin-top: 16px; font-weight: 600; backdrop-filter: blur(2px); padding: 8px 16px; border-radius: 20px; background: rgba(255,255,255,0.1);">
+                  Click to view gallery
+                </div>
+              </div>
+              <!-- Animated dots for carousel indicator -->
+              <div style="position: absolute; bottom: 16px; left: 0; right: 0; display: flex; justify-content: center; gap: 8px;">
+                <div class="carousel-dot active" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.8);"></div>
+                <div class="carousel-dot" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4);"></div>
+                <div class="carousel-dot" style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4);"></div>
+              </div>
+            </div>
+            <div class="personal-content">
+              <h3>Photo Gallery</h3>
+              <p>
+                A selection of my favorite iPhone photography moments. From urban scenes to quiet details, 
+                each image represents a moment worth remembering.
+              </p>
+              <p style="font-size: 14px; color: var(--text-tertiary); margin-top: 12px;">
+                Click the card above to browse through the collection.
+              </p>
+            </div>
+          </div>
+
+          <!-- Gallery Modal -->
+          <div id="galleryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center;">
+            <div style="position: relative; width: 90%; max-width: 1200px; height: 80vh; background: var(--bg-surface); border-radius: var(--radius-lg); overflow: hidden;">
+              
+              <!-- Close button -->
+              <button id="closeGallery" style="position: absolute; top: 16px; right: 16px; width: 40px; height: 40px; background: rgba(0,0,0,0.5); border: none; border-radius: 50%; color: white; font-size: 24px; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center;">
+                ×
+              </button>
+              
+              <!-- Gallery container -->
+              <div id="galleryContainer" style="width: 100%; height: 100%; display: flex; overflow: hidden; position: relative;">
+                
+                <!-- Image display -->
+                <div id="currentImage" style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px;">
+                  <div style="width: 100%; height: 100%; background: var(--bg-overlay); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+                    <span style="color: var(--text-tertiary); font-size: 18px;">
+                      Add your photos here
+                    </span>
+                  </div>
+                </div>
+                
+                <!-- Thumbnail sidebar -->
+                <div style="width: 120px; background: var(--bg-secondary); border-left: 1px solid var(--border-light); overflow-y: auto; padding: 20px;">
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <!-- Sample thumbnails - replace with your images -->
+                    <div class="gallery-thumb" style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 8px; cursor: pointer;"></div>
+                    <div class="gallery-thumb" style="width: 80px; height: 80px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 8px; cursor: pointer;"></div>
+                    <div class="gallery-thumb" style="width: 80px; height: 80px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 8px; cursor: pointer;"></div>
+                    <div class="gallery-thumb" style="width: 80px; height: 80px; background: linear-gradient(135deg, #43e97b, #38f9d7); border-radius: 8px; cursor: pointer;"></div>
+                    <div class="gallery-thumb" style="width: 80px; height: 80px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 8px; cursor: pointer;"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Navigation and info -->
+              <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); display: flex; justify-content: space-between; align-items: flex-end;">
+                <div>
+                  <h4 style="color: white; margin: 0 0 8px 0;">Photo Gallery</h4>
+                  <p style="color: rgba(255,255,255,0.8); font-size: 14px; margin: 0;">
+                    <span id="currentPhotoIndex">1</span> of <span id="totalPhotos">5</span> • iPhone photography
+                  </p>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                  <button class="gallery-nav-btn" data-direction="prev" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.2); border: none; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    ←
+                  </button>
+                  <button class="gallery-nav-btn" data-direction="next" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.2); border: none; color: white; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+          // Gallery functionality
+          document.addEventListener('DOMContentLoaded', function() {
+            const galleryTrigger = document.getElementById('galleryTrigger');
+            const galleryModal = document.getElementById('galleryModal');
+            const closeGallery = document.getElementById('closeGallery');
+            const galleryNavBtns = document.querySelectorAll('.gallery-nav-btn');
+            const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+            const currentPhotoIndex = document.getElementById('currentPhotoIndex');
+            const carouselDots = document.querySelectorAll('.carousel-dot');
+            
+            let currentIndex = 0;
+            const totalPhotos = galleryThumbs.length;
+            document.getElementById('totalPhotos').textContent = totalPhotos;
+            
+            // Sample photos data - REPLACE WITH YOUR ACTUAL PHOTOS
+            const samplePhotos = [
+              { color: 'linear-gradient(135deg, #667eea, #764ba2)', title: 'Urban Sunset' },
+              { color: 'linear-gradient(135deg, #f093fb, #f5576c)', title: 'Street Details' },
+              { color: 'linear-gradient(135deg, #4facfe, #00f2fe)', title: 'Architecture Lines' },
+              { color: 'linear-gradient(135deg, #43e97b, #38f9d7)', title: 'Park Reflections' },
+              { color: 'linear-gradient(135deg, #fa709a, #fee140)', title: 'City Lights' }
+            ];
+            
+            // Open modal
+            galleryTrigger.addEventListener('click', function() {
+              galleryModal.style.display = 'flex';
+              updateGalleryDisplay();
+            });
+            
+            // Close modal
+            closeGallery.addEventListener('click', function() {
+              galleryModal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside
+            galleryModal.addEventListener('click', function(e) {
+              if (e.target === galleryModal) {
+                galleryModal.style.display = 'none';
+              }
+            });
+            
+            // Navigation
+            galleryNavBtns.forEach(btn => {
+              btn.addEventListener('click', function() {
+                const direction = this.getAttribute('data-direction');
+                if (direction === 'prev') {
+                  currentIndex = (currentIndex - 1 + totalPhotos) % totalPhotos;
+                } else {
+                  currentIndex = (currentIndex + 1) % totalPhotos;
+                }
+                updateGalleryDisplay();
+              });
+            });
+            
+            // Thumbnail clicks
+            galleryThumbs.forEach((thumb, index) => {
+              thumb.addEventListener('click', function() {
+                currentIndex = index;
+                updateGalleryDisplay();
+              });
+            });
+            
+            // Update gallery display
+            function updateGalleryDisplay() {
+              const currentImage = document.getElementById('currentImage');
+              const photo = samplePhotos[currentIndex];
+              
+              // Update main image display
+              currentImage.innerHTML = `
+                <div style="width: 100%; height: 100%; background: ${photo.color}; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                  <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">📸</div>
+                    <div style="font-weight: 600; margin-bottom: 8px;">${photo.title}</div>
+                    <div style="font-size: 14px; opacity: 0.9;">Add your photo here</div>
+                  </div>
+                </div>
+              `;
+              
+              // Update photo counter
+              currentPhotoIndex.textContent = currentIndex + 1;
+              
+              // Update thumbnail selection
+              galleryThumbs.forEach((thumb, index) => {
+                thumb.style.border = index === currentIndex ? '3px solid var(--accent-primary)' : 'none';
+              });
+              
+              // Update carousel dots on card
+              carouselDots.forEach((dot, index) => {
+                dot.style.background = index === (currentIndex % 3) ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+              });
+            }
+            
+            // Auto-rotate carousel dots on card (every 3 seconds)
+            setInterval(function() {
+              const activeIndex = Array.from(carouselDots).findIndex(dot => 
+                dot.style.background.includes('0.8')
+              );
+              const nextIndex = (activeIndex + 1) % carouselDots.length;
+              
+              carouselDots.forEach((dot, index) => {
+                dot.style.background = index === nextIndex ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.4)';
+              });
+            }, 3000);
+            
+            // Initialize
+            updateGalleryDisplay();
+          });
+          </script>
+
+          <style>
+          /* Add these styles to your existing CSS */
+          .personal-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          }
+
+          .gallery-thumb {
+            transition: transform 0.2s ease, border 0.2s ease;
+          }
+
+          .gallery-thumb:hover {
+            transform: scale(1.05);
+          }
+
+          .gallery-nav-btn:hover {
+            background: rgba(255,255,255,0.3) !important;
+          }
+
+          /* Modal animations */
+          #galleryModal {
+            animation: fadeIn 0.3s ease;
+          }
+
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+
+          /* Prevent body scroll when modal is open */
+          body.modal-open {
+            overflow: hidden;
+          }
+          </style>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Instagram Embed -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Connect</h2>
+        
+        <div class="social-embeds-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto 48px;">
+          
+          <!-- LinkedIn Profile Card -->
+          <div class="social-card" style="background: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden;">
+            <div style="padding: 24px; background: linear-gradient(135deg, #0077B5, #00A0DC); color: white; text-align: center;">
+              <h3 style="margin: 0 0 8px 0; color: white;">LinkedIn</h3>
+              <p style="opacity: 0.9; margin: 0; font-size: 14px;">Professional Profile</p>
+            </div>
+            
+            <div style="padding: 24px; text-align: center;">
+              <!-- LinkedIn Profile Info -->
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 24px;">
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 32px; font-weight: 600;">
+                  ST
+                </div>
+                <div>
+                  <h4 style="margin: 0 0 4px 0;">Steve Totev</h4>
+                  <p style="color: var(--text-tertiary); margin: 0; font-size: 14px;">Software Engineer</p>
+                  <p style="color: var(--text-tertiary); margin: 4px 0 0; font-size: 13px;">📍 London, UK</p>
+                </div>
+              </div>
+              
+              <!-- LinkedIn Stats -->
+              <div style="display: flex; justify-content: space-around; margin-bottom: 24px;">
+                <div style="text-align: center;">
+                  <div style="font-size: 18px; font-weight: 600; color: var(--accent-primary);">240+</div>
+                  <div style="font-size: 12px; color: var(--text-tertiary);">Connections</div>
+                </div>
+                <div style="text-align: center;">
+                  <div style="font-size: 18px; font-weight: 600; color: var(--accent-primary);">DEKRA</div>
+                  <div style="font-size: 12px; color: var(--text-tertiary);">Current</div>
+                </div>
+                <div style="text-align: center;">
+                  <div style="font-size: 18px; font-weight: 600; color: var(--accent-primary);">Open</div>
+                  <div style="font-size: 12px; color: var(--text-tertiary);">To Connect</div>
+                </div>
+              </div>
+              
+              <a href="https://uk.linkedin.com/in/stevetotev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center; margin-top: 8px;">
+                View LinkedIn Profile →
+              </a>
+            </div>
+          </div>
+          
+          <!-- Instagram Profile Embed (EXACTLY like wardrobeforyou) -->
+          <div class="social-card" style="background: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden;">
+            <div style="padding: 24px; background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C); color: white; text-align: center;">
+              <h3 style="margin: 0 0 8px 0; color: white;">Instagram</h3>
+              <p style="opacity: 0.9; margin: 0; font-size: 14px;">@totevsteve • Personal & Photography</p>
+            </div>
+            
+            <div style="padding: 0; background: white;">
+              <!-- Instagram Official Profile Embed -->
+              <iframe 
+                class="instagram-media instagram-media-rendered" 
+                id="instagram-embed-0" 
+                src="https://www.instagram.com/totevsteve/embed/?cr=1&v=14&wp=416&rd=https%3A%2F%2Fstevetotev.co.uk&rp=%2F" 
+                allowtransparency="true" 
+                allowfullscreen="true" 
+                frameborder="0" 
+                height="472" 
+                data-instgrm-payload-id="instagram-media-payload-0" 
+                scrolling="no" 
+                style="width: 100%; background-color: white; border: none; display: block; margin: 0; padding: 0;">
+              </iframe>
+            </div>
+            
+            <div style="padding: 16px 24px; border-top: 1px solid var(--border-light); text-align: center;">
+              <a href="https://instagram.com/totevsteve" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style="color: #E1306C; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">
+                Follow on Instagram →
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Direct Contact Section -->
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <h3>Direct Contact</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 24px;">
+            For project inquiries, collaboration opportunities, or technical discussions.
+          </p>
+          
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;">
+            <a href="mailto:steve@stevetotev.co.uk" class="btn btn-primary">
+              ✉️ Send Email
+            </a>
+            <a href="https://github.com/bosssteve03" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              💻 GitHub Profile
+            </a>
+          </div>
+          
+          <div style="border-top: 1px solid var(--border-light); padding-top: 20px;">
+            <p class="text-small" style="color: var(--text-tertiary); margin-bottom: 12px;">Based in London, UK • Open to remote opportunities</p>
+            <div style="display: flex; justify-content: center; gap: 20px; font-size: 14px;">
+              <a href="https://uk.linkedin.com/in/stevetotev" 
+                style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 6px;">
+                <span style="color: #0077B5;">in</span> LinkedIn
+              </a>
+              <span style="color: var(--border-light);">•</span>
+              <a href="https://github.com/bosssteve03" 
+                style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 6px;">
+                <span style="color: #333;">💻</span> GitHub
+              </a>
+              <span style="color: var(--border-light);">•</span>
+              <a href="https://instagram.com/totevsteve" 
+                style="color: var(--text-secondary); text-decoration: none; display: flex; align-items: center; gap: 6px;">
+                <span style="color: #E1306C;">📸</span> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Optional: Load Instagram embed script -->
+        <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3 style="margin-bottom: 16px;">Software Engineer</h3>
+          <p class="text-small">
+            Full-stack development with a focus on clean, maintainable systems and polished user experiences.
+          </p>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 16px;">Contact</h3>
+          <p class="text-small">
+            <a href="https://uk.linkedin.com/in/stevetotev" style="color: inherit; text-decoration: none;">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Software Engineer. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Get stored theme or default to dark
+    const storedTheme = localStorage.getItem('theme') || 
+                       (prefersDarkScheme.matches ? 'dark' : 'light');
+    
+    document.documentElement.setAttribute('data-theme', storedTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const headerHeight = document.querySelector('header').offsetHeight;
+          const targetPosition = targetElement.offsetTop - headerHeight - 24;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+          
+          // Update URL without scrolling
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+    
+    // Update active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    function updateActiveNavLink() {
+      let scrollPosition = window.scrollY + 200;
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', updateActiveNavLink);
+    
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      updateActiveNavLink();
+    });
+  </script>
+</body>
+</html>
