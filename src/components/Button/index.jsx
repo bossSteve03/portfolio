@@ -11,7 +11,7 @@ export default function Button({
   ...props
 }) {
   const baseStyles = `
-    inline-flex items-center justify-center gap-2 font-semibold text-[15px]
+    inline-flex items-center justify-center gap-2 font-semibold text-[0.938rem]
     rounded-[var(--radius-md)] transition-all duration-200 cursor-pointer
     border-none outline-none no-underline
   `;

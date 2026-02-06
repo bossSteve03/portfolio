@@ -18,7 +18,7 @@ export default function TechCard({
 }) {
   return (
     <div
-      className="rounded-[var(--radius-lg)] border p-8 transition-all duration-200 hover:border-[var(--accent-primary)] hover:shadow-[0_0_32px_rgba(109,140,255,0.2)]"
+      className="rounded-[var(--radius-lg)] border p-8 transition-all duration-200 hover:border-[var(--accent-primary)] hover:shadow-[0_0_2rem_rgba(109,140,255,0.2)]"
       style={{
         backgroundColor: 'var(--bg-overlay)',
         borderColor: 'var(--border-light)',
@@ -46,7 +46,7 @@ export default function TechCard({
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className="px-3 py-1.5 text-[13px] rounded-full border transition-all duration-200 hover:bg-[var(--accent-primary)] hover:text-white hover:scale-105"
+            className="px-3 py-1.5 text-[0.813rem] rounded-full border transition-all duration-200 hover:bg-[var(--accent-primary)] hover:text-white hover:scale-105"
             style={{
               backgroundColor: 'var(--bg-pill)',
               borderColor: 'var(--border-light)',

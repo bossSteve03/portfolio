@@ -65,7 +65,7 @@ export default function Contact() {
               </div>
 
               {/* Image */}
-              <div className="bg-white overflow-hidden" style={{ height: '335px' }}>
+              <div className="bg-white overflow-hidden" style={{ height: '20.938rem' }}>
                 <img src={linkedinProfile} alt="LinkedIn profile" className="w-full h-full object-cover object-top" />
               </div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
               </div>
 
               {/* Image */}
-              <div className="bg-white overflow-hidden" style={{ height: '335px' }}>
+              <div className="bg-white overflow-hidden" style={{ height: '20.938rem' }}>
                 <img src={githubProfile} alt="GitHub profile" className="w-full h-full object-cover object-top" />
               </div>
 
@@ -255,7 +255,7 @@ export default function Contact() {
               </div>
 
               {/* Image */}
-              <div className="bg-white overflow-hidden" style={{ height: '335px' }}>
+              <div className="bg-white overflow-hidden" style={{ height: '20.938rem' }}>
                 <img src={emailProfile} alt="Email" className="w-full h-full object-cover object-top" />
               </div>
 

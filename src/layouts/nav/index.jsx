@@ -24,7 +24,7 @@ export default function Nav() {
       style={{
         backgroundColor: "var(--bg-primary)",
         borderColor: "var(--border-light)",
-        backdropFilter: "blur(10px)",
+        backdropFilter: "blur(0.625rem)",
       }}
     >
       <div className="container h-full flex justify-between items-center">
@@ -47,7 +47,7 @@ export default function Nav() {
                   to={path}
                   onClick={handleNavClick}
                   className={({ isActive }) => `
-                    relative py-2 text-[15px] font-medium no-underline transition-colors
+                    relative py-2 text-[0.938rem] font-medium no-underline transition-colors
                     ${isActive ? "text-[var(--text-primary)]" : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"}
                   `}
                   style={({ isActive }) => ({
@@ -123,7 +123,7 @@ export default function Nav() {
                     setMobileMenuOpen(false);
                     handleNavClick();
                   }}
-                  className="block py-3 px-4 rounded-[var(--radius-sm)] text-[15px] font-medium no-underline transition-colors"
+                  className="block py-3 px-4 rounded-[var(--radius-sm)] text-[0.938rem] font-medium no-underline transition-colors"
                   style={({ isActive }) => ({
                     color: isActive
                       ? "var(--text-primary)"

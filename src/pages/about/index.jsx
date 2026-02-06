@@ -124,7 +124,7 @@ function ImageModal({ images, currentIndex, onClose, onNext, onPrev }) {
 }
 
 // Polaroid Image Component
-const POLAROID_SIZE = 180; // px - width for portrait, height for landscape
+const POLAROID_SIZE = '11.25rem'; // width for portrait, height for landscape
 
 function Polaroid({ src, position, onClick, index }) {
   const [isLandscape, setIsLandscape] = useState(null);
@@ -164,8 +164,8 @@ function Polaroid({ src, position, onClick, index }) {
           onLoad={handleImageLoad}
           style={{
             display: 'block',
-            width: isLandscape ? 'auto' : `${POLAROID_SIZE}px`,
-            height: isLandscape ? `${POLAROID_SIZE}px` : 'auto',
+            width: isLandscape ? 'auto' : POLAROID_SIZE,
+            height: isLandscape ? POLAROID_SIZE : 'auto',
           }}
         />
       </div>
@@ -262,7 +262,7 @@ export default function About() {
               <div
                 key={index}
                 className="relative flex justify-center"
-                style={{ minHeight: '300px' }}
+                style={{ minHeight: '18.75rem' }}
               >
                 {/* Floating Polaroids - Desktop */}
                 {interest.images.map((img, imgIndex) => (

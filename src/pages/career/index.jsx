@@ -234,7 +234,7 @@ export default function Career() {
             ))}
 
             {/* Total Experience Summary */}
-            <div className="relative mb-12 pl-[72px]">
+            <div className="relative mb-12 pl-[4.5rem]">
               <div
                 className="absolute left-4 top-2 w-4 h-4 rounded-full border-4"
                 style={{

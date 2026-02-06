@@ -12,7 +12,7 @@ export function TimelineItem({
   highlight = false,
 }) {
   return (
-    <div className="relative mb-12 pl-[72px]">
+    <div className="relative mb-12 pl-[4.5rem]">
       {/* Timeline line */}
       {!isLast && (
         <div
