@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# AI related directories
+venv/
+agent-os/
+.claude/

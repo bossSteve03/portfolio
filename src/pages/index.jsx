@@ -1,6 +1,5 @@
-export {default as Home} from "./home"
-export {default as Technologies} from "./technologies"
-export {default as About} from "./about"
-export {default as Projects} from "./projects"
-export {default as Test} from "./test"
-// export {default as Contact} from "./contact"
+export { default as Home } from './home';
+export { default as Career } from './career';
+export { default as Property } from './property';
+export { default as About } from './about';
+export { default as Contact } from './contact';

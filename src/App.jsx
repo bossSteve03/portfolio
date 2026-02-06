@@ -1,37 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { Routes, Route } from "react-router-dom";
-import './App.css';
-import { Nav } from './layouts';
-import { Home, Technologies, About, Projects, Test } from './pages';
-import { LoadingScreen } from './components';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './layouts';
+import { Home, Career, Property, About, Contact } from './pages';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, [])
-
   return (
-    <>
-    <Routes>
-      <Route path="/" element={
-        isLoading ?
-        <LoadingScreen /> :
-        <>
-        <Nav />
-        <Home />
-        <Technologies />
-        <About />
-        {/* <Projects /> */}
-        </>
-        }/>
-      <Route path='/test' element={<Test/>} />
-    </Routes>
-    </>
-  )
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/property" element={<Property />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
