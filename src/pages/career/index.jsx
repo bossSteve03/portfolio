@@ -31,6 +31,8 @@ const experience = [
     date: "Oct 2023 - Mar 2025 · 1 yr 6 mos",
     title: "Junior Software Apprentice",
     company: "DEKRA",
+    description:
+      "Client-facing delivery of IT solutions through stakeholder engagement, system and process design, client configuration and development, and report building, alongside application support within enterprise environments. Awarded Distinction.",
     type: "Apprenticeship",
     skills: [
       "Agile Methodologies",

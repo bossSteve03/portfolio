@@ -34,7 +34,7 @@ export default function Contact() {
           <h1>Get in Touch</h1>
           <p className="text-lead max-w-2xl">
             Whether you have a project in mind, want to discuss opportunities,
-            or just want to connect – I'd love to hear from you.
+            or just want to connect – I&apos;d love to hear from you.
           </p>
         </div>
       </section>
@@ -281,10 +281,10 @@ export default function Contact() {
               border: '1px solid var(--border-light)',
             }}
           >
-            <h2 className="mb-4">Let's Work Together</h2>
+            <h2 className="mb-4">Let&apos;s Work Together</h2>
             <p className="text-lead mb-8 max-w-xl mx-auto">
               Have a project in mind or want to discuss opportunities?
-              I'm always open to new challenges and collaborations.
+              I&apos;m always open to new challenges and collaborations.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">

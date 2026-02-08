@@ -126,7 +126,7 @@ function ImageModal({ images, currentIndex, onClose, onNext, onPrev }) {
 // Polaroid Image Component
 const POLAROID_SIZE = '11.25rem'; // width for portrait, height for landscape
 
-function Polaroid({ src, position, onClick, index }) {
+function Polaroid({ src, position, onClick }) {
   const [isLandscape, setIsLandscape] = useState(null);
 
   const positionStyles = {
@@ -239,12 +239,12 @@ export default function About() {
 
           <div className="max-w-3xl">
             <p className="text-lead mb-6">
-              I'm a software engineer based in London with a passion for building clean,
-              maintainable systems. Beyond the technical work, I'm driven by curiosity
+              I&apos;m a software engineer based in London with a passion for building clean,
+              maintainable systems. Beyond the technical work, I&apos;m driven by curiosity
               and a commitment to continuous learning.
             </p>
             <p className="text-lead">
-              Whether it's picking up a new programming language, exploring different
+              Whether it&apos;s picking up a new programming language, exploring different
               cultures, or finding the right angle for a photo, I believe in taking the
               time to understand things properly before moving forward.
             </p>
@@ -350,7 +350,7 @@ export default function About() {
               <h3 style={{ color: 'var(--text-primary)' }}>Continuous Learning</h3>
               <p>
                 Technology moves fast, and I make it a priority to stay current while
-                also understanding the fundamentals that don't change.
+                also understanding the fundamentals that don&apos;t change.
               </p>
               <p className="mb-0">
                 From learning new frameworks to picking up Spanish as my third language,

@@ -25,7 +25,7 @@ export default function Home() {
 
               {/* Headline */}
               <h1>
-                Hi, I'm <span className="gradient-text">Steve Totev</span>
+                Hi, I&apos;m <span className="gradient-text">Steve Totev</span>
               </h1>
 
               {/* Mobile Profile Photo */}
