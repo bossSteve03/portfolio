@@ -1,5 +1,7 @@
 import React from "react";
 import { Badge, Timeline, TimelineItem, TechCard } from "../../components";
+import dekraLogo from "../../assets/dekra.jpg";
+import lafosseLogo from "../../assets/lafosse.jpg";
 
 const focusAreas = [
   "Internal Systems",
@@ -25,7 +27,7 @@ const experience = [
       "OWASP Top 10",
       "Full-stack Development",
     ],
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQGiSiBVFBk7fA/company-logo_100_100/company-logo_100_100/0/1688974801687/dekra_logo?e=1770854400&v=beta&t=G-L_N4xP1F_JQWa-a1f1oWNXvvhr8Bpx_pAh_EMV5yc",
+    logo: dekraLogo,
   },
   {
     date: "Oct 2023 - Mar 2025 · 1 yr 6 mos",
@@ -41,7 +43,7 @@ const experience = [
       "Full-lifecycle Development",
       "Stakeholder Engagement",
     ],
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQGiSiBVFBk7fA/company-logo_100_100/company-logo_100_100/0/1688974801687/dekra_logo?e=1770854400&v=beta&t=G-L_N4xP1F_JQWa-a1f1oWNXvvhr8Bpx_pAh_EMV5yc",
+    logo: dekraLogo,
   },
   {
     date: "Feb 2023 - May 2023 · 4 mos",
@@ -57,7 +59,7 @@ const experience = [
       "Problem Solving",
       "Presentation Skills",
     ],
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQH2VDhdiXGDhQ/company-logo_100_100/B4EZasGrz9HMAQ-/0/1746644156022/la_fosse_logo?e=1770854400&v=beta&t=-959u--TJ--yWUCJ3FZ2QMzPC1CMhvDk1CGMSgogiks",
+    logo: lafosseLogo,
   },
 ];
 
