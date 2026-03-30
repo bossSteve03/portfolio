@@ -17,7 +17,7 @@ const experience = [
     company: "DEKRA",
     type: "Full-time",
     description:
-      "Maintain legacy and current software applications. Develop and test new software applications and features. Provide application support where needed.",
+      "Maintain legacy systems through refactoring, patching security vulnerabilities, and implementing modern features. Develop and test new software applications. Agile methodology. Provide 2nd line support for internal applications. Collaborate with cross-functional teams to design and implement software solutions that meet business needs.",
     skills: [
       "Agile Methodologies",
       "PHP",
